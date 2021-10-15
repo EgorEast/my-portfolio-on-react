@@ -2,7 +2,7 @@ import React from 'react';
 import App from './App';
 
 const Beco = () => {
-	return <App className='beco' />;
+	return <App />;
 };
 
 export default Beco;
