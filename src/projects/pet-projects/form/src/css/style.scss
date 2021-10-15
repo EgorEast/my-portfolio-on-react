@@ -1,0 +1,67 @@
+$font-stack: Helvetica,
+sans-serif;
+$primary-color: #333;
+
+.form {
+	font: 100% $font-stack;
+	color: $primary-color;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	input {
+		border-color: $primary-color;
+		font-size: 85%;
+		background: white;
+	}
+
+	button {
+		border-color: $primary-color;
+		width: 70px;
+		background: $primary-color;
+		color: white;
+
+		&:disabled {
+			display: none;
+		}
+	}
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+
+	.form-header {
+		font-size: 300%;
+		font-weight: bold;
+	}
+
+	.register-button-container {
+		padding-top: 20px;
+	}
+
+	.error-field {
+		color: red,
+	}
+}
+
+.complete-message-container {
+	@extend .form;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-auto-rows: 30vh;
+
+	.top-region-message,
+	.complete-message,
+	.bottom-region-message {
+		grid-column-start: 1;
+		grid-column-end: 4;
+	}
+
+	.complete-message {
+		display: block;
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,70 @@
+main {
+  padding-top: 72px;
+}
+
+main .search {
+  margin-bottom: 56px;
+}
+
+main .search .search-field-container {
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .search .search-field-container .search-field {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+main .rest-cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px;
+}
+
+main .list-restaurats {
+  margin-bottom: 80px;
+}
+
+main .list-restaurats .header-list-rest {
+  font-family: Roboto;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+main .list-restaurats .card {
+  width: 308px;
+  height: 366px;
+  margin: auto;
+  text-decoration: none;
+}
+
+main .list-restaurats .card .rest-img {
+  height: 256px;
+  width: 100%;
+}
+
+main .list-restaurats .card .rest-title {
+  font-size: 16px;
+}
+
+main .list-restaurats .card .dish-top {
+  font-size: 14px;
+  color: #626262;
+}
+
+main .list-restaurats .card .cooking-time {
+  font-size: 13px;
+}
+/*# sourceMappingURL=styleStores.css.map */

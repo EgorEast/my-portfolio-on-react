@@ -1,0 +1,245 @@
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto;
+}
+
+.bcgnd-green {
+  background: #007765;
+  min-width: 800px;
+}
+
+.bcgnd-white {
+  background: #FFFFFF;
+  min-width: 800px;
+}
+
+.bcgnd-gray-light {
+  background: #EEEEEE;
+  min-width: 800px;
+}
+
+.bcgnd-gray-dark {
+  background: #333333;
+  min-width: 800px;
+}
+
+.bcgnd-green-img {
+  background: url(./src/images/firstImg.png);
+  background-size: cover;
+  background-position: center;
+  min-width: 800px;
+}
+
+.bcgnd-blue-img {
+  background: url(./src/images/secondImg.png);
+  background-size: cover;
+  background-position: center;
+  min-width: 800px;
+}
+
+.bold-text {
+  font-family: RobotoBold;
+}
+
+.italic-text {
+  font-family: RobotoItalic;
+}
+
+.content {
+  margin: auto;
+  min-width: 800px;
+  max-width: 1219px;
+  width: 100%;
+}
+
+.header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 84px;
+}
+
+.header-content .logo {
+  height: 45px;
+  margin-left: 55px;
+}
+
+.header-content .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  margin-right: 55px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+.header-content .menu-ref {
+  font-weight: 500;
+  font-family: Roboto;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.title-text {
+  height: 403px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: RobotoBold;
+  font-weight: 500;
+  font-size: 72px;
+  color: #FFFFFF;
+}
+
+.text-container {
+  padding: 48px 55px 92px;
+}
+
+.headers {
+  margin-bottom: 15px;
+  color: #007765;
+  font-family: RobotoBold;
+  text-align: center;
+  font-size: 64px;
+}
+
+.clause {
+  font-size: 32px;
+}
+
+.hero {
+  height: 483px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-text {
+  width: 893px;
+  color: #FFFFFF;
+  font-family: RobotoBold;
+  font-weight: 500;
+  font-size: 48px;
+  text-align: center;
+}
+
+.text-with-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text-with-logo .ppc-logo {
+  width: 115px;
+  height: 115px;
+  margin-right: 48px;
+}
+
+.team-container {
+  padding: 48px 24px 94px 24px;
+}
+
+.team-container .team {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.team-container .team .team-member {
+  margin: 30px;
+}
+
+.team-container .team .team-member img {
+  width: 168px;
+  height: 168px;
+}
+
+.team-container .team .team-member .member-name {
+  color: #007765;
+  font-family: RobotoBold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.team-container .team .team-member .member-position {
+  font-family: RobotoItalic;
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 176px;
+}
+
+.footer-content .footer-text {
+  color: #FFFFFF;
+  font-size: 18px;
+  width: 540px;
+  text-align: center;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./src/fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url(./src/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: RobotoItalic;
+  src: url(./src/fonts/Roboto-Italic.ttf);
+}
+/*# sourceMappingURL=style.css.map */

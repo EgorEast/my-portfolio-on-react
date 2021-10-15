@@ -1,0 +1,75 @@
+.form, .complete-message-container {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.form input, .complete-message-container input {
+  border-color: #333;
+  font-size: 85%;
+  background: white;
+}
+
+.form button, .complete-message-container button {
+  border-color: #333;
+  width: 70px;
+  background: #333;
+  color: white;
+}
+
+.form button:disabled, .complete-message-container button:disabled {
+  display: none;
+}
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-container .form-header {
+  font-size: 300%;
+  font-weight: bold;
+}
+
+.form-container .register-button-container {
+  padding-top: 20px;
+}
+
+.form-container .error-field {
+  color: red;
+}
+
+.complete-message-container {
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: 30vh;
+}
+
+.complete-message-container .top-region-message,
+.complete-message-container .complete-message,
+.complete-message-container .bottom-region-message {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.complete-message-container .complete-message {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

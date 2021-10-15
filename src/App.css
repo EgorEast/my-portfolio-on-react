@@ -18,7 +18,11 @@ body::-webkit-scrollbar {
 	display: none;
 }
 
-h1 {
+.my-portfolio-header h1 a {
+	color: #000 !important;
+	text-decoration: none;
+}
+.my-portfolio-header h1 {
 	width: 200px;
 	margin: auto;
 	text-align: center;

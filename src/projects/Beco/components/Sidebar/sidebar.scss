@@ -1,0 +1,323 @@
+@import '../../styles/global-vars.scss';
+@import '../../fonts/my-fonts.scss';
+$companyLogo: url('../../icons/company-logo.svg');
+$iconCatalogueDefault: url('../../icons/sidebar/catalogue-default.svg') no-repeat;
+$iconCatalogueActive: url('../../icons/sidebar/catalogue-active.svg') no-repeat;
+$iconHealthDefault: url('../../icons/sidebar/health-default.svg') no-repeat;
+$iconHealthActive: url('../../icons/sidebar/health-active.svg') no-repeat;
+$iconBeautyDefault: url('../../icons/sidebar/beauty-default.svg') no-repeat;
+$iconBeautyActive: url('../../icons/sidebar/beauty-active.svg') no-repeat;
+$iconEntertainmentDefault: url('../../icons/sidebar/entertainment-default.svg') no-repeat;
+$iconEntertainmentActive: url('../../icons/sidebar/entertainment-active.svg') no-repeat;
+$iconCarDefault: url('../../icons/sidebar/car-default.svg') no-repeat;
+$iconCarActive: url('../../icons/sidebar/car-active.svg') no-repeat;
+
+$iconCloseSidebarButton: url('../../icons/sidebar/close-sidebar-button.svg') no-repeat;
+$iconOPenSidebarButton: url('../../icons/sidebar/open-sidebar-button.svg') no-repeat;
+
+$sidebarBacground: #F3F4F9;
+
+@media screen and (min-width: $desktopMinWidth) {
+  .sidebar-container {
+    width: $desktopSidebarWidth;
+  }
+
+  .company {
+    padding: 41px;
+
+    &-logo {
+      height: 50px;
+      width: 50px;
+    }
+
+    &-name {
+      padding-left: 10px;
+      align-self: center;
+      font-size: 16px;
+    }
+  }
+
+  .closing-opening-sidebar-button {
+    display: none;
+  }
+
+  .category {
+    .mark {
+      width: 3px;
+      height: 24px;
+      margin-right: 37px;
+    }
+
+    .heading {
+      padding-left: 12px;
+    }
+  }
+}
+
+@media screen and (min-width: $tabletMinWidth) and (max-width: $desktopMinWidth) {
+  .sidebar {
+    position: absolute;
+    height: 100%;
+
+    .category {
+      .mark {
+        width: 3px;
+        height: 24px;
+        margin-right: 37px;
+      }
+    }
+
+    &.open {
+      position: fixed;
+      z-index: 1;
+      height: 100%;
+
+      .sidebar-container {
+        width: $tabletSidebarOpenWidth;
+      }
+
+      .company {
+        padding: 41px 0 47px 41px;
+
+        &-logo {
+          height: 24px;
+          width: 24px;
+        }
+
+        &-name {
+          padding-left: 5px;
+          align-self: center;
+          font-size: 16px;
+        }
+      }
+
+      .category {
+        .heading {
+          padding-left: 12px;
+        }
+      }
+    }
+
+    &.closed {
+      .sidebar-container {
+        width: $tabletSidebarClosedWidth;
+      }
+
+      .company {
+        padding: 41px 0 47px 41px;
+
+        &-logo {
+          height: 24px;
+          width: 24px;
+        }
+
+        &-name {
+          display: none;
+        }
+      }
+
+      .category {
+        .heading {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tabletMinWidth) {
+  .sidebar {
+    height: 100%;
+    position: absolute;
+
+    .category {
+      .icon {
+        display: none;
+      }
+    }
+
+    &.open {
+      position: fixed;
+      z-index: 1;
+      height: 100%;
+
+      .sidebar-container {
+        width: $mobileSidebarOpenWidth;
+      }
+
+      .company {
+        padding: 40px 20px;
+
+        &-logo {
+          height: 24px;
+          width: 24px;
+        }
+
+        &-name {
+          padding-left: 5px;
+          align-self: center;
+          font-size: 16px;
+        }
+      }
+
+      .category {
+        .heading {
+          padding-left: 17px;
+          ;
+        }
+      }
+    }
+
+    &.closed {
+      .sidebar-container {
+        width: $mobileSidebarClosedWidth;
+      }
+
+      .company {
+
+        &-logo,
+        &-name {
+          display: none;
+        }
+      }
+
+      .category {
+        display: none;
+      }
+    }
+  }
+}
+
+.sidebar {
+  display: flex;
+
+  &.open {
+    .closing-opening-sidebar-button {
+      background: $iconCloseSidebarButton;
+    }
+  }
+
+  &.closed {
+    .closing-opening-sidebar-button {
+      background: $iconOPenSidebarButton;
+    }
+  }
+}
+
+.closing-opening-sidebar-button {
+  width: $closingOpeningSidebarButtonWidth;
+  height: $closingOpeningSidebarButtonHeight;
+  border: none;
+  z-index: 1;
+}
+
+.sidebar-container {
+  background: $sidebarBacground;
+  height: 100%;
+}
+
+.company {
+  display: flex;
+
+  &-logo {
+    background: $companyLogo;
+    background-size: contain;
+  }
+
+  &-name {
+    font-family: PoppinsNormal, sans-serif;
+  }
+}
+
+.category {
+  height: 64px;
+  display: flex;
+
+  .mark,
+  .icon,
+  .heading {
+    align-self: center;
+  }
+
+  &.default {
+    &.catalogue {
+      .icon {
+        background: $iconCatalogueDefault;
+      }
+    }
+
+    &.health {
+      .icon {
+        background: $iconHealthDefault;
+      }
+    }
+
+    &.beauty {
+      .icon {
+        background: $iconBeautyDefault;
+      }
+    }
+
+    &.entertainment {
+      .icon {
+        background: $iconEntertainmentDefault;
+      }
+    }
+
+    &.car {
+      .icon {
+        background: $iconCarDefault;
+      }
+    }
+  }
+
+  &.active {
+    &.catalogue {
+      .icon {
+        background: $iconCatalogueActive;
+      }
+    }
+
+    &.health {
+      .icon {
+        background: $iconHealthActive;
+      }
+    }
+
+    &.beauty {
+      .icon {
+        background: $iconBeautyActive;
+      }
+    }
+
+    &.entertainment {
+      .icon {
+        background: $iconEntertainmentActive;
+      }
+    }
+
+    &.car {
+      .icon {
+        background: $iconCarActive;
+      }
+    }
+
+    .mark {
+      background: $activeColor;
+    }
+
+    .heading {
+      color: $activeColor;
+    }
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .heading {
+    font-size: 16px;
+    font-family: OpenSansNormal, sans-serif;
+  }
+}

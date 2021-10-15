@@ -1,0 +1,302 @@
+$minWidthContent: 310px;
+$maxWidthContent: 978px;
+$lightText: white;
+$lightBgnd: white;
+$footerColorBgnd: #262626;
+$logoDark: url(./src/images/logoDark.svg);
+$logoLight: url(./src/images/logoLight.svg);
+$basketBtn: url(./src/images/basket.svg);
+$appStoreImg: url(./src/images/downloadOnTheAppStore.svg);
+$googlePlayImg: url(./src/images/downloadOnTheGooglePlay.svg);
+$btnUpBgnd: url(../../src/images/btnUp.svg);
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: Roboto;
+	color: #1D1D1D;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.hor-line-light {
+	background: $lightBgnd; // Цвет линии 
+	height: 1px; // Толщина линии
+	opacity: 0.3;
+}
+
+.hor-line-dark {
+	background-color: #757575; // Цвет линии 
+	height: 1px; // Толщина линии
+	opacity: 0.3;
+}
+
+.content {
+	margin: auto;
+	width: 100vw;
+	max-width: $maxWidthContent;
+	min-width: $minWidthContent;
+	padding: 0 8px;
+}
+
+.rgeen-text {
+	color: #327430;
+}
+
+
+@media (max-width: 650px) {
+
+	.contacts-container,
+	.information {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 632px) {
+	.bascet-btn {
+		display: none;
+	}
+}
+
+
+header {
+	position: fixed;
+	height: 72px;
+	width: 100%;
+	box-shadow: 0 0 10px 0 #b8b8b8;
+	background: $lightBgnd;
+	display: flex;
+	z-index: 1;
+
+	.header-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.header-logo {
+			background: $logoDark;
+			width: 120px;
+			height: 13px;
+		}
+
+		.header-btn-container {
+			display: flex;
+			align-items: center;
+
+			.sign-in-btn {
+				background: none;
+				border: 1px solid #E0E0E0;
+				border-radius: 2px;
+				width: 78px;
+				height: 40px;
+				font-family: RobotoMedium;
+			}
+
+			.bascet-btn {
+				margin-left: 27px;
+				border: none;
+				background: $basketBtn;
+				width: 19px;
+				height: 23px;
+			}
+		}
+	}
+}
+
+footer {
+	background: $footerColorBgnd;
+	min-width: $minWidthContent;
+
+	.foot-link {
+		color: $lightText;
+		text-decoration: none;
+		margin-bottom: 23px;
+	}
+
+	.footer-logo-container {
+		padding: 56px 0 41px;
+
+		.footer-logo {
+			background: $logoLight;
+			width: 191px;
+			height: 20px;
+		}
+	}
+
+	.contacts-container {
+		display: flex;
+
+		.lang-and-contacts {
+			width: 33.33vw;
+			max-width: 308px;
+			min-width: 245px;
+			padding-top: 39px;
+			padding: 32px 0 48px;
+
+			.select-lang {
+				height: 40px;
+				width: 227px;
+				display: flex;
+				background: #3B3B3B;
+				margin-bottom: 33px;
+
+				.world-ico-container {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 40px;
+					width: 48px;
+
+					.world-ico {
+						display: flex;
+						width: 16px;
+						height: 16px;
+					}
+				}
+
+				.language {
+					width: 179px;
+					background: #3B3B3B;
+					color: $lightText;
+					border: none;
+					outline: none;
+
+					.lang-option {
+						color: $lightText;
+					}
+				}
+			}
+
+			.social {
+				height: 60px;
+
+				.hash-tag {
+					height: 19px;
+					margin-bottom: 17px;
+
+					.green-sharp {
+						color: #49A144;
+						font-size: 16px;
+					}
+
+					.tag {
+						font-size: 16px;
+						color: $lightText;
+					}
+				}
+
+				&-icon {
+					margin-right: 10px;
+				}
+			}
+
+		}
+
+		.partnership {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+
+			width: 33.33vw;
+			max-width: 308px;
+			min-width: 255px;
+			padding-top: 39px;
+		}
+
+		.service {
+			padding: 39px 0 48px;
+			width: 33.33vw;
+
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	.download-container {
+		padding: 41px 0 39px;
+		display: flex;
+		justify-content: center;
+
+		.download-btn {
+			height: 40px;
+			border: none;
+		}
+
+		.app-store-bcgnd {
+			background: $appStoreImg;
+			width: 121px;
+		}
+
+		.google-play-bcgnd {
+			background: $googlePlayImg;
+			width: 135px;
+		}
+
+		.interval-41 {
+			width: 41px;
+		}
+	}
+
+	.information {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 40px 0;
+
+		.trademark {
+			width: 33.33vw;
+			max-width: 308px;
+			min-width: 227px;
+
+			color: $lightText;
+			margin: 0 0 23px;
+		}
+
+		.privacy {
+			width: 33.33vw;
+			max-width: 308px;
+			min-width: 255px;
+		}
+
+		.terms-service {
+			width: 33.33vw;
+			max-width: 308px;
+			min-width: 240px;
+		}
+	}
+}
+
+.btn-up {
+	border: none;
+	background: $btnUpBgnd;
+	width: 80px;
+	height: 80px;
+	position: fixed;
+	right: 16px;
+	bottom: 24px;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(./src/fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+	font-family: RobotoBold;
+	src: url(./src/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+	font-family: RobotoMedium;
+	src: url(./src/fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+	font-family: RobotoItalic;
+	src: url(./src/fonts/Roboto-Italic.ttf);
+}

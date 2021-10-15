@@ -1,0 +1,33 @@
+@import '../../styles/global-vars.scss';
+
+@media screen and (max-width: $desktopMinWidth) {
+  .main-content {
+    position: relative;
+    left: -48px;
+    margin-right: -48px;
+  }
+}
+
+@media screen and (min-width: $tabletMinWidth) and (max-width: $desktopMinWidth) {
+  .main-content {
+    padding-left: calc(#{$tabletSidebarClosedWidth} + #{$closingOpeningSidebarButtonWidth});
+  }
+}
+
+@media screen and (max-width: $tabletMinWidth) {
+  .main-content {
+    padding-left: calc(#{$mobileSidebarClosedWidth} + #{$closingOpeningSidebarButtonWidth});
+  }
+}
+
+.main-content {
+  width: 100%;
+
+  .hr-line {
+    padding: 0;
+    height: 0;
+    border: none;
+    border-top: 1px solid #E5E5E5;
+    margin: 0;
+  }
+}

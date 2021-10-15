@@ -1,0 +1,215 @@
+$minWidthContent: 800px;
+$maxWidthContent: 1219px;
+$myGreen: #007765;
+$myWhite: #FFFFFF;
+$myGrayLight: #EEEEEE;
+$myGrayDark: #333333;
+
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Roboto;
+}
+
+.bcgnd-green {
+	background: $myGreen;
+	min-width: $minWidthContent;
+}
+
+.bcgnd-white {
+	background: $myWhite;
+	min-width: $minWidthContent;
+}
+
+.bcgnd-gray-light {
+	background: $myGrayLight;
+	min-width: $minWidthContent;
+}
+
+.bcgnd-gray-dark {
+	background: $myGrayDark;
+	min-width: $minWidthContent;
+}
+
+.bcgnd-green-img {
+	background: url(./src/images/firstImg.png);
+	background-size: cover;
+	background-position: center;
+	min-width: $minWidthContent;
+}
+
+.bcgnd-blue-img {
+	background: url(./src/images/secondImg.png);
+	background-size: cover;
+	background-position: center;
+	min-width: $minWidthContent;
+}
+
+.bold-text {
+	font-family: RobotoBold;
+}
+
+.italic-text {
+	font-family: RobotoItalic;
+}
+
+.content {
+	margin: auto;
+	min-width: $minWidthContent;
+	max-width: $maxWidthContent;
+	width: 100%;
+}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 84px;
+
+	.logo {
+		height: 45px;
+		margin-left: 55px;
+	}
+
+	.menu {
+		display: flex;
+		flex-flow: row nowrap;
+		margin-right: 55px;
+		font-weight: 500;
+		font-size: 24px;
+		color: $myWhite;
+
+		&-ref {
+			font-weight: 500;
+			font-family: Roboto;
+			font-size: 24px;
+			color: $myWhite;
+			text-decoration: none;
+		}
+	}
+}
+
+.title-text {
+	height: 403px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: RobotoBold;
+	font-weight: 500;
+	font-size: 72px;
+	color: $myWhite;
+}
+
+.text-container {
+	padding: 48px 55px 92px;
+}
+
+.headers {
+	margin-bottom: 15px;
+	color: $myGreen;
+	font-family: RobotoBold;
+	text-align: center;
+	font-size: 64px;
+}
+
+.clause {
+	font-size: 32px;
+}
+
+.hero {
+	height: 483px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&-text {
+		width: 893px;
+		color: $myWhite;
+		font-family: RobotoBold;
+		font-weight: 500;
+		font-size: 48px;
+		text-align: center;
+	}
+}
+
+.text-with-logo {
+	display: flex;
+
+	.ppc-logo {
+		width: 115px;
+		height: 115px;
+		margin-right: 48px;
+	}
+}
+
+.team-container {
+	padding: 48px 24px 94px 24px;
+
+	.team {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: center;
+		justify-content: center;
+		grid-template-rows: repeat(2, 1fr);
+
+		.team-member {
+			margin: 30px;
+
+			img {
+				width: 168px;
+				height: 168px;
+			}
+
+			.member-name {
+				color: $myGreen;
+				font-family: RobotoBold;
+				font-size: 24px;
+				text-align: center;
+			}
+
+			.member-position {
+				font-family: RobotoItalic;
+				font-size: 18px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+.footer-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 176px;
+
+	.footer-text {
+		color: $myWhite;
+		font-size: 18px;
+		width: 540px;
+		text-align: center;
+	}
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(./src/fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+	font-family: RobotoBold;
+	src: url(./src/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+	font-family: RobotoItalic;
+	src: url(./src/fonts/Roboto-Italic.ttf);
+}

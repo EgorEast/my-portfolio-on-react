@@ -1,0 +1,63 @@
+main {
+	padding-top: 72px;
+	min-width: $minWidthContent;
+
+	.search {
+		margin-bottom: 56px;
+
+		.search-field-container {
+			height: 48px;
+			display: flex;
+			align-items: flex-end;
+
+			.search-field {
+				display: block;
+				width: 100%;
+				border: none;
+				outline: none;
+				font-size: 16px;
+			}
+		}
+	}
+
+	.rest-cards-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 16px;
+	}
+
+	.list-restaurats {
+		margin-bottom: 80px;
+
+		.header-list-rest {
+			font-family: Roboto;
+			font-size: 22px;
+			margin-bottom: 16px;
+		}
+
+		.card {
+			width: 308px;
+			height: 366px;
+			margin: auto;
+			text-decoration: none;
+
+			.rest-img {
+				height: 256px;
+				width: 100%;
+			}
+
+			.rest-title {
+				font-size: 16px;
+			}
+
+			.dish-top {
+				font-size: 14px;
+				color: #626262;
+			}
+
+			.cooking-time {
+				font-size: 13px;
+			}
+		}
+	}
+}

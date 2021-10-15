@@ -1,0 +1,224 @@
+$minWidthContent: 310px;
+$maxWidthContent: 978px;
+$lightText: white;
+$lightBgnd: white;
+$bannerBgnd: url(./images/banner.png);
+
+$MaxMiddleWindow: 815px;
+$MaxSmallWindow: 500px;
+
+@media screen and (min-width: $MaxSmallWindow) {
+	.offer-day-title {
+		font-size: 36px;
+	}
+
+	.offer-day-information {
+		display: flex;
+		height: 50%;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+@media screen and (max-width: $MaxSmallWindow) {
+	.snack-card {
+		height: 102px;
+		width: 100%;
+	}
+
+	.snack-img {
+		height: 102px;
+		width: 102px;
+	}
+
+	.offer-day-title {
+		display: flex;
+		justify-content: center;
+		font-size: 24px;
+	}
+
+	.offer-day-information {
+		display: flex;
+		flex-direction: column;
+		height: 50%;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+@media screen and (min-width: $MaxSmallWindow) and (max-width: $MaxMiddleWindow) {
+	.snack-card {
+		height: 160px;
+		width: 100%;
+	}
+
+	.snack-img {
+		height: 160px;
+		width: 200px;
+	}
+}
+
+@media screen and (min-width: $MaxMiddleWindow) {
+	.snack-card {
+		height: 160px;
+		width: 49%;
+	}
+
+	.snack-img {
+		height: 160px;
+		width: 170px;
+	}
+}
+
+@media screen and (max-width: 611px) {
+	.filter {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 611px) {
+	.filter {
+		display: flex;
+		height: 80px;
+		align-items: center;
+
+		&-item {
+			text-decoration: none;
+		}
+
+		&-item-first {
+			padding-right: 40px;
+		}
+
+		&-item-end {
+			padding-right: 0;
+		}
+
+		.rgeen-text {
+			color: #327430;
+		}
+	}
+}
+
+main {
+	padding-top: 72px;
+	min-width: $minWidthContent;
+
+	.banner {
+		width: 100vw;
+		height: 364px;
+		background: $bannerBgnd;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		min-width: $minWidthContent;
+
+		.offer-day-container {
+			display: flex;
+			height: 100%;
+			align-items: center;
+
+			.offer-day {
+				width: 389px;
+				height: 204px;
+				background: $lightBgnd;
+
+				padding: 38px 29px 38px 38px;
+
+				&-title {
+					height: 50%;
+					font-family: RobotoBold;
+				}
+
+				&-information {
+					display: flex;
+					height: 50%;
+					align-items: center;
+					justify-content: space-between;
+				}
+
+				&-dish {
+					display: flex;
+					font-size: 14px;
+					color: #626262;
+				}
+
+				&-cooking-time {
+					width: 100px;
+					height: 32px;
+					color: $lightText;
+					font-size: 13px;
+					background: #262626;
+					border-radius: 16px;
+					justify-content: center;
+					display: flex;
+					align-items: center
+				}
+			}
+		}
+	}
+
+	.rest-cards-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 16px;
+	}
+
+	.list-snacks {
+		margin-top: 56px;
+		margin-bottom: 80px;
+
+		&-header {
+			font-family: Roboto;
+			font-size: 22px;
+			margin-bottom: 32px;
+		}
+
+		.snack-card {
+			margin: auto;
+			text-decoration: none;
+			display: flex;
+			justify-content: space-between;
+
+			border: solid 1px #75757534;
+			border-radius: 2px;
+
+			.information-on-snack {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				padding: 16px;
+				// width: 100%;
+
+				.snack-title-and-ingr-container {
+					.snack-title-container {
+						display: inline-block;
+						width: 100%;
+
+						.snack-title {
+							display: inline-block;
+							width: 100%;
+							min-width: 100px;
+							max-width: calc(100% - 10px);
+							font-size: 16px;
+							margin-bottom: 8px;
+							// overflow: hidden;
+							// text-overflow: ellipsis;
+							// white-space: nowrap;
+						}
+					}
+
+					.ingridient {
+						font-size: 13px;
+						color: #626262;
+					}
+				}
+
+				.cost {
+					font-weight: 500;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+}

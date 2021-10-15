@@ -1,0 +1,253 @@
+@media screen and (min-width: 500px) {
+  .offer-day-title {
+    font-size: 36px;
+  }
+  .offer-day-information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .snack-card {
+    height: 102px;
+    width: 100%;
+  }
+  .snack-img {
+    height: 102px;
+    width: 102px;
+  }
+  .offer-day-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 24px;
+  }
+  .offer-day-information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 815px) {
+  .snack-card {
+    height: 160px;
+    width: 100%;
+  }
+  .snack-img {
+    height: 160px;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 815px) {
+  .snack-card {
+    height: 160px;
+    width: 49%;
+  }
+  .snack-img {
+    height: 160px;
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 611px) {
+  .filter {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 611px) {
+  .filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .filter-item {
+    text-decoration: none;
+  }
+  .filter-item-first {
+    padding-right: 40px;
+  }
+  .filter-item-end {
+    padding-right: 0;
+  }
+  .filter .rgeen-text {
+    color: #327430;
+  }
+}
+
+main {
+  padding-top: 72px;
+  min-width: 310px;
+}
+
+main .banner {
+  width: 100vw;
+  height: 364px;
+  background: url(./images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 310px;
+}
+
+main .banner .offer-day-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .banner .offer-day-container .offer-day {
+  width: 389px;
+  height: 204px;
+  background: white;
+  padding: 38px 29px 38px 38px;
+}
+
+main .banner .offer-day-container .offer-day-title {
+  height: 50%;
+  font-family: RobotoBold;
+}
+
+main .banner .offer-day-container .offer-day-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .banner .offer-day-container .offer-day-dish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  color: #626262;
+}
+
+main .banner .offer-day-container .offer-day-cooking-time {
+  width: 100px;
+  height: 32px;
+  color: white;
+  font-size: 13px;
+  background: #262626;
+  border-radius: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .rest-cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px;
+}
+
+main .list-snacks {
+  margin-top: 56px;
+  margin-bottom: 80px;
+}
+
+main .list-snacks-header {
+  font-family: Roboto;
+  font-size: 22px;
+  margin-bottom: 32px;
+}
+
+main .list-snacks .snack-card {
+  margin: auto;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: solid 1px #75757534;
+  border-radius: 2px;
+}
+
+main .list-snacks .snack-card .information-on-snack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px;
+}
+
+main .list-snacks .snack-card .information-on-snack .snack-title-and-ingr-container .snack-title-container {
+  display: inline-block;
+  width: 100%;
+}
+
+main .list-snacks .snack-card .information-on-snack .snack-title-and-ingr-container .snack-title-container .snack-title {
+  display: inline-block;
+  width: 100%;
+  min-width: 100px;
+  max-width: calc(100% - 10px);
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+main .list-snacks .snack-card .information-on-snack .snack-title-and-ingr-container .ingridient {
+  font-size: 13px;
+  color: #626262;
+}
+
+main .list-snacks .snack-card .information-on-snack .cost {
+  font-weight: 500;
+  font-size: 15px;
+}
+/*# sourceMappingURL=styleRest.css.map */
