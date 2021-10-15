@@ -1,0 +1,98 @@
+body {
+	--my-pixie-green: #f0f3bec5;
+	--my-blue: #02808f;
+	--my-metallic-seaweed: #04668d;
+	--my-wedgewood: #4b919c;
+	--my-pumice: #c4d3c3;
+	--my-regal-blue: #064d69;
+	background: linear-gradient(
+		var(--my-pixie-green),
+		var(--my-metallic-seaweed)
+	);
+	margin: 0;
+	padding: 0;
+	font-family: MonsterratRegular, sans-serif;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+h1 {
+	width: 200px;
+	margin: auto;
+	text-align: center;
+}
+section a {
+	color: black;
+}
+
+header p {
+	width: 270px;
+	margin: auto;
+	text-align: center;
+}
+
+h2 {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.section-item {
+	width: 300px;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+section .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+section .link-on-folder {
+	text-align: end;
+}
+
+/*test tasks section*/
+
+.test-tasks-section .section-item {
+	background: var(--my-blue);
+	color: var(--my-pumice);
+}
+.test-tasks-section .section-item a,
+.test-tasks-section .section-item h3 {
+	color: var(--my-pixie-green);
+}
+
+/* pet projects section */
+
+.pet-projects-section .section-item {
+	background: var(--my-wedgewood);
+	color: var(--my-regal-blue);
+}
+.pet-projects-section .section-item h3,
+.pet-projects-section .section-item a {
+	color: var(--my-metallic-seaweed);
+}
+
+/* landing pages section */
+
+.landing-pages-section .section-item {
+	background: var(--my-pixie-green);
+	color: var(--my-metallic-seaweed);
+}
+.landing-pages-section .section-item h3,
+.landing-pages-section .section-item a {
+	color: var(--my-blue);
+}
+
+@font-face {
+	font-family: 'MonsterratRegular';
+	src: url('./fonts/Montserrat-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
