@@ -5,10 +5,11 @@ body {
 	--my-wedgewood: #4b919c;
 	--my-pumice: #c4d3c3;
 	--my-regal-blue: #064d69;
-	background: linear-gradient(
+	background-color: var(--my-pixie-green);
+	/* background: linear-gradient(
 		var(--my-pixie-green),
 		var(--my-metallic-seaweed)
-	);
+	); */
 	margin: 0;
 	padding: 0;
 	font-family: MonsterratRegular, sans-serif;

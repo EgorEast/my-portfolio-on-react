@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const Project = ({ index, title, about, model, usedTechnologies, links }) => {
 	return (
@@ -34,15 +33,9 @@ const Project = ({ index, title, about, model, usedTechnologies, links }) => {
 					{links.map((link, index) => {
 						return [
 							<span>{index !== 0 ? ', ' : null}</span>,
-							<>
-								{link.type === 'my-page' ? (
-									<Link to={link.to}>{link.content}</Link>
-								) : (
-									<a href={link.href} target='_blank' rel='noreferrer'>
-										{link.content}
-									</a>
-								)}
-							</>,
+							<a href={link.href} target='_blank' rel='noreferrer'>
+								{link.content}
+							</a>,
 						];
 					})}
 				</span>

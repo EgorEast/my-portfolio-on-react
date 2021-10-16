@@ -21,9 +21,8 @@ const testTasksItems = [
 				href: 'https://codesandbox.io/s/memory-game-uv7vx',
 			},
 			{
-				type: 'my-page',
 				content: 'Open project',
-				to: '/memory-game',
+				href: 'https://memory-game-slobodskoy.herokuapp.com/',
 			},
 		],
 	},
@@ -32,7 +31,7 @@ const testTasksItems = [
 		about: 'Search of video and preservation of a search query in storage.',
 		model: null,
 		usedTechnologies: [
-			'UI-libraryvAntDesign',
+			'UI-library AntDesign',
 			'React',
 			'React-Redux & Redux-toolkit',
 			'React-Router',
@@ -49,9 +48,8 @@ const testTasksItems = [
 				href: 'https://codesandbox.io/s/youtube-search-vv7ix',
 			},
 			{
-				type: 'my-page',
 				content: 'Open project',
-				to: '/youtube-search',
+				href: 'https://youtube-search-slobodskoy.netlify.app/',
 			},
 		],
 	},
@@ -75,9 +73,8 @@ const testTasksItems = [
 				href: 'https://codesandbox.io/s/beco-0ixu3',
 			},
 			{
-				type: 'my-page',
 				content: 'Open project',
-				to: '/beco',
+				href: 'https://beco-slobodskoy.netlify.app/',
 			},
 		],
 	},
@@ -91,13 +88,17 @@ const testTasksItems = [
 				content: 'On GitHub',
 				href: 'https://github.com/EgorEast/crud-ui',
 			},
+			{
+				content: 'Open project',
+				href: 'https://crud-ui-slobodskoy.herokuapp.com/',
+			},
 		],
 	},
 ];
 
 const petProjectsItems = [
 	{
-		title: 'Clock',
+		title: 'Current time',
 		about:
 			'This is a simple project in which I applied initial knowlage of css and worked with time and DOM-tree in js.',
 		model: null,
@@ -108,9 +109,8 @@ const petProjectsItems = [
 				href: 'https://github.com/EgorEast/MyPetProjectsJS/tree/main/Projects/CurrentTime',
 			},
 			{
-				type: 'my-page',
 				content: 'Open project',
-				to: '/clock',
+				href: 'https://current-time-slobodskoy.netlify.app/',
 			},
 		],
 	},
@@ -126,9 +126,8 @@ const petProjectsItems = [
 				href: 'https://github.com/EgorEast/MyPetProjectsJS/tree/main/Projects/Form',
 			},
 			{
-				type: 'my-page',
 				content: 'Open project',
-				to: '/form',
+				href: 'https://form-slobodskoy.netlify.app/',
 			},
 		],
 	},
@@ -144,9 +143,8 @@ const petProjectsItems = [
 				href: 'https://github.com/EgorEast/MyPetProjectsJS/tree/main/Projects/voting-system',
 			},
 			{
-				type: 'my-page',
 				content: 'Open project',
-				to: '/voting-system',
+				href: 'https://voting-system-slobodskoy.netlify.app/',
 			},
 		],
 	},
@@ -167,9 +165,8 @@ const landingPages = [
 				href: 'https://github.com/EgorEast/LandingPages/tree/main/Stepik/Pied%20Piper',
 			},
 			{
-				type: 'my-page',
 				content: 'Open project',
-				to: '/pied-piper',
+				href: 'https://pied-piper-stepik-slobodskoy.netlify.app/',
 			},
 		],
 	},
@@ -184,9 +181,8 @@ const landingPages = [
 				href: 'https://github.com/EgorEast/LandingPages/tree/main/Stepik/Learn%20BOOTSTRAP',
 			},
 			{
-				type: 'my-page',
 				content: 'Open project',
-				to: '/portfolio',
+				href: 'https://portfolio-stepik-slobodskoy.netlify.app/',
 			},
 		],
 	},
@@ -204,15 +200,14 @@ const landingPages = [
 				href: 'https://github.com/EgorEast/LandingPages/tree/main/Stepik/Final%20Project',
 			},
 			{
-				type: 'my-page',
 				content: 'Open project',
-				to: '/final-page-stepik',
+				href: 'https://final-project-stepik-slobodskoy.netlify.app/',
 			},
 		],
 	},
 ];
 
-const PortfilioPage = () => {
+const PortfolioPage = () => {
 	return (
 		<>
 			<section className='test-tasks-section'>
@@ -290,4 +285,4 @@ const PortfilioPage = () => {
 	);
 };
 
-export default PortfilioPage;
+export default PortfolioPage;
