@@ -216,6 +216,7 @@ const PortfolioPage = () => {
 					{testTasksItems.map((item, index) => {
 						return (
 							<Project
+								key={index + 'test-tasks'}
 								index={index}
 								title={item.title}
 								about={item.about}
@@ -233,6 +234,7 @@ const PortfolioPage = () => {
 					{petProjectsItems.map((item, index) => {
 						return (
 							<Project
+								key={index + 'pet-projects'}
 								index={index}
 								title={item.title}
 								about={item.about}
@@ -250,6 +252,7 @@ const PortfolioPage = () => {
 					{landingPages.map((item, index) => {
 						return (
 							<Project
+								key={index + 'landing-pages'}
 								index={index}
 								title={item.title}
 								about={item.about}

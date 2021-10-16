@@ -20,8 +20,8 @@ const Project = ({ index, title, about, model, usedTechnologies, links }) => {
 				<div>
 					<h4>The used technologies:</h4>
 					<ul>
-						{usedTechnologies.map((techName) => (
-							<li>{techName}</li>
+						{usedTechnologies.map((techName, index) => (
+							<li key={index}>{techName}</li>
 						))}
 					</ul>
 				</div>
@@ -31,12 +31,14 @@ const Project = ({ index, title, about, model, usedTechnologies, links }) => {
 				<b>Links: </b>
 				<span>
 					{links.map((link, index) => {
-						return [
-							<span>{index !== 0 ? ', ' : null}</span>,
-							<a href={link.href} target='_blank' rel='noreferrer'>
-								{link.content}
-							</a>,
-						];
+						return (
+							<span key={index}>
+								<span>{index !== 0 ? ', ' : null}</span>
+								<a href={link.href} target='_blank' rel='noreferrer'>
+									{link.content}
+								</a>
+							</span>
+						);
 					})}
 				</span>
 			</div>

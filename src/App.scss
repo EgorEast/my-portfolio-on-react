@@ -1,3 +1,6 @@
+$desktopMinWidth: 1025px;
+$tabletMinWidth: 569px;
+
 body {
 	--my-blue: #02808f;
 	--my-metallic-seaweed: #04668d;
@@ -49,8 +52,8 @@ section {
 		padding-top: 2%;
 	}
 
+
 	.section-item {
-		width: 300px;
 		margin: 10px;
 		padding: 20px;
 		border-radius: 10px;
@@ -64,6 +67,24 @@ section {
 
 	.link-on-folder {
 		text-align: end;
+	}
+}
+
+@media screen and (min-width: $desktopMinWidth) {
+	.section-item {
+		width: 600px;
+	}
+}
+
+@media screen and (min-width: $tabletMinWidth) and (max-width: $desktopMinWidth) {
+	.section-item {
+		width: 450px;
+	}
+}
+
+@media screen and (max-width: $tabletMinWidth) {
+	.section-item {
+		width: 300px;
 	}
 }
 
