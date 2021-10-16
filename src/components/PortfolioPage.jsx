@@ -243,16 +243,6 @@ const PortfolioPage = () => {
 						);
 					})}
 				</div>
-				<p className='link-on-folder'>
-					Pet projects{' '}
-					<a
-						href='https://github.com/EgorEast/MyPetProjectsJS'
-						target='_blank'
-						rel='noreferrer'
-					>
-						on GitHub
-					</a>
-				</p>
 			</section>
 			<section className='landing-pages-section'>
 				<h2>Landing Pages:</h2>
@@ -270,16 +260,6 @@ const PortfolioPage = () => {
 						);
 					})}{' '}
 				</div>
-				<p className='link-on-folder'>
-					Landing Pages{' '}
-					<a
-						href='https://github.com/EgorEast/LandingPages'
-						target='_blank'
-						rel='noreferrer'
-					>
-						on GitHub
-					</a>
-				</p>
 			</section>
 		</>
 	);
