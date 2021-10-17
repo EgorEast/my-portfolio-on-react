@@ -54,31 +54,6 @@ const testTasksItems = [
 		],
 	},
 	{
-		title: 'Beco',
-		about: 'Imposition of the page on the model without use of libraries.',
-		model: { content: 'on Figma', href: 'https://tinyurl.com/y4nxp4wt' },
-		usedTechnologies: [
-			'Webpack & plugins',
-			'JavaScript',
-			'Scss',
-			`Package manager npm`,
-		],
-		links: [
-			{
-				content: 'On GitHub',
-				href: 'https://github.com/EgorEast/beco',
-			},
-			{
-				content: 'Developed on CodeSandbox',
-				href: 'https://codesandbox.io/s/beco-0ixu3',
-			},
-			{
-				content: 'Open project',
-				href: 'https://beco-slobodskoy.netlify.app/',
-			},
-		],
-	},
-	{
 		title: 'CRUD-UI',
 		about: '',
 		model: { content: 'on Figma', href: 'https://tinyurl.com/y4nxp4wt' },
@@ -152,13 +127,39 @@ const petProjectsItems = [
 
 const landingPages = [
 	{
+		title: 'Beco',
+		about: 'Imposition of the page on the model without use of libraries.',
+		model: { content: 'on Figma', href: 'https://tinyurl.com/y4nxp4wt' },
+		usedTechnologies: [
+			'Webpack & plugins',
+			'JavaScript',
+			'Scss',
+			`Package manager npm`,
+		],
+		links: [
+			{
+				content: 'On GitHub',
+				href: 'https://github.com/EgorEast/beco',
+			},
+			{
+				content: 'Developed on CodeSandbox',
+				href: 'https://codesandbox.io/s/beco-0ixu3',
+			},
+			{
+				content: 'Open project',
+				href: 'https://beco-slobodskoy.netlify.app/',
+			},
+		],
+	},
+	{
 		title: 'Pied Piper',
-		about: null,
+		about:
+			'This is simple page where I applied initial knowlage of imposition.',
 		model: {
 			content: 'on Figma',
 			href: 'https://www.figma.com/file/BL7wdCOSIxYFu1uxctuVzg/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%B5%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-Pied-Piper?node-id=0%3A1',
 		},
-		usedTechnologies: null,
+		usedTechnologies: ['JavaScript', 'CSS'],
 		links: [
 			{
 				content: 'On GitHub',
@@ -172,9 +173,12 @@ const landingPages = [
 	},
 	{
 		title: '"Portfolio"',
-		about: null,
-		model: null,
-		usedTechnologies: null,
+		about: 'In this project I imposed the page with use bootstrap.',
+		model: {
+			content: 'on Figma',
+			href: 'https://www.figma.com/file/nDXdlmr1kCVnWEcnPWtfLg/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BD%D0%B0-%D0%91%D1%83%D1%82%D1%81%D1%82%D1%80%D0%B0%D0%BF?node-id=1%3A2',
+		},
+		usedTechnologies: ['JavaScript', 'CSS'],
 		links: [
 			{
 				content: 'On GitHub',
@@ -188,12 +192,13 @@ const landingPages = [
 	},
 	{
 		title: '"Final Project"',
-		about: null,
+		about:
+			'In this project I needed to use flexboxgrid2 libruary, but as I cannot thinly it for myself, I set all the styles manually.',
 		model: {
 			content: 'on Figma',
 			href: 'https://www.figma.com/file/8lxQ3PGYTHQsCgTXnEJre8/Uber-Eats',
 		},
-		usedTechnologies: null,
+		usedTechnologies: ['JavaScript', 'CSS'],
 		links: [
 			{
 				content: 'On GitHub',
